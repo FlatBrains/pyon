@@ -1,10 +1,8 @@
 import pygame
+from classes import *
 
+screen = Screen(1920, 1080)
 
-WIDTH, HEIGHT = 2000, 1000
-
-WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
+WINDOW = pygame.display.set_mode(screen.getscreen(), pygame.RESIZABLE)
 
 pygame.display.set_caption("pyon")
-
-#pygame.display.set_icon(pygame.image.load())

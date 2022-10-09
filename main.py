@@ -1,8 +1,9 @@
-from pyonEngine import *
+from pyonEngine import pyonEngine
 from assets import *
 
 # you can run your own code in here and setup your workspace, I recommend you look into the source code first
 # also you need a base understanding of pygame and python
+
 
 
 

@@ -1,5 +1,5 @@
-from ...pyon.Main import *
-from pyonEngine.window import *
+from ..main import *
+from pyonEngine import *
 
 import pygame
 import sys
@@ -9,9 +9,7 @@ clock = pygame.time.Clock()
 
 start()
 
-class input:
-    def getkey(self, key):
-        print()
+
 
 while True:
     clock.tick(FPSCap)
