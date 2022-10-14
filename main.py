@@ -6,7 +6,6 @@ from assets import *
 
 
 
-
 def start():
     print("this gets called on startup")
 

@@ -1,20 +1,25 @@
 import pygame
 
+class img:
+    def __init__(image):
+        return pygame.image.load(image)
+
 class input:
     def getkey(self, key):
         print()
 
-class Screen:
-    def __init__(self, w, h):
-        if w is None:
-            self.width = 1920
+
+
+class screen:
+    def __init__(self, w, h, resizeable):
+        self.width = w
+        self.height = h
+        self.resizeable = False
+        self.resizeable = resizeable
+        if resizeable == True:
+            self = pygame.display.set_mode((w, h), pygame.RESIZABLE)
         else:
-            self.width = w
-            
-        if h is None:
-            self.height = 1080
-        else:
-            self.height = h
+            self = pygame.display.set_mode((w, h), pygame.RESIZABLE)
     
     def set(self, w, h):
         self.width = w
@@ -34,4 +39,4 @@ class Screen:
         pygame.display.set_caption(title)
         
     def setImg(self, image):
-        pygame.display.set_icon()
+        pygame.display.set_icon(img(image))
