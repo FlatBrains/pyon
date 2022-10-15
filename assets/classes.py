@@ -1,4 +1,4 @@
-from ..pyonEngine import *
+from pyonEngine import *
 
 #here are your classes
 

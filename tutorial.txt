@@ -1,3 +1,3 @@
-totally not pylon - L
+basically python and pygame, but easy
 
-gold goldfishű
+101: fuck python import

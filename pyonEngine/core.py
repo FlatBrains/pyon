@@ -1,5 +1,6 @@
-from main import start, update
 from pyonEngine import *
+from pyonEngine.window import *
+from main import update, start
 
 import pygame
 import sys

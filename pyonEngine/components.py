@@ -1,4 +1,4 @@
-from  pyonEngine.window import *
+from pyonEngine.window import *
 from pyonEngine.color import *
 
 import pygame
