@@ -1,4 +1,4 @@
-from ..main import *
+from main import start, update
 from pyonEngine import *
 
 import pygame
@@ -9,16 +9,12 @@ clock = pygame.time.Clock()
 
 start()
 
-
-
 while True:
     clock.tick(FPSCap)
     update()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-            sys.exit()
+            sys.exit()    
     
-    
-    pygame.display.update()
-    
+    pygame.display.update()    

@@ -4,3 +4,4 @@ from window import *
 from functions import *
 from color import *
 from classes import *
+from main import *
