@@ -1,4 +1,6 @@
 import pygame
+import os
+
 
 class img:
     def __init__(image):
@@ -10,16 +12,25 @@ class input:
 
 
 
-class screen:
+class window:
     def __init__(self, w, h, resizeable):
+        
         self.width = w
         self.height = h
         self.resizeable = False
         self.resizeable = resizeable
+        
         if resizeable == True:
-            self = pygame.display.set_mode((w, h), pygame.RESIZABLE)
+            self.window = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
         else:
-            self = pygame.display.set_mode((w, h), pygame.RESIZABLE)
+            self.window = pygame.display.set_mode((self.width, self.height))
+    
+    def fill(self, r, g ,b):
+        self.window.fill(tuple((r, g ,b)))
+    
+    def fillhex(self, color):
+        self.window.fill(tuple((int(color[0:2], 16), int(color[2:4], 16), int(color[4:6], 16))))
+    
     
     def set(self, w, h):
         self.width = w
@@ -29,11 +40,11 @@ class screen:
         return (self.w, self.h)
     
     def get(self, input):
-        if input == self.w:
-            return self.w
+        if input == "w":
+            return self.width
         
-        elif input == self.y:
-            return self.h
+        elif input == "h":
+            return self.height
         
     def setTitle(self, title):
         pygame.display.set_caption(title)
